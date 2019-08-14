@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/GroupDocsSignature",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Save time by collecting signatures online, directly from your webpages.",
+    "authors": [
+    {
+        "name": "GroupDocs",
+        "email": "marketplace@groupdocs.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gdsig_Groupdocssignature>
+            <version>0.1.0</version>
+        </Gdsig_Groupdocssignature>
+    </modules>
+    
+    <global>
+        
+    <blocks>
+         <adminhtml>
+            <rewrite>
+                <cms_page_edit>Gdsig_Groupdocssignature_Block_Adminhtml_Cms_Page_Edit</cms_page_edit>
+            </rewrite>
+        </adminhtml>
+    </blocks>
+
+        
+        <models>
+            <groupdocssignature>
+                <class>Gdsig_Groupdocssignature_Model</class>
+                <resourceModel>groupdocssignature_mysql4</resourceModel>
+            </groupdocssignature>
+            <groupdocssignature_mysql4>
+                <class>Gdass_Groupdocsassembly_Model_Mysql4</class>
+                <entities>
+                    <groupdocssignature>
+                        <table>groupdocssig</table>
+                    </groupdocssignature>
+                </entities>
+            </groupdocssignature_mysql4>
+        </models>
+<resources>
+        <groupdocssignature_write>
+            <connection>
+                <use>core_write</use>
+            </connection>
+        </groupdocssignature_write>
+
+       <groupdocssignature_read>
+          <connection>
+             <use>core_read</use>
+          </connection>
+       </groupdocssignature_read>
+       
+       <groupdocssignature_delete>
+          <connection>
+             <use>core_delete</use>
+          </connection>
+       </groupdocssignature_delete>
+</resources>
+
+        
+        
+        
+        
+        <blocks>
+            <groupdocssignature>
+                <class>Gdsig_Groupdocssignature_Block</class>
+            </groupdocssignature>
+        </blocks>
+        <helpers>
+            <groupdocssignature>
+                <class>Gdsig_Groupdocssignature_Helper</class>
+            </groupdocssignature>  
+        </helpers>
+    </global>
+    
+    <admin>
+        <routers>
+            <groupdocssignature>
+                <use>admin</use>
+                <args>
+                    <module>Gdsig_Groupdocssignature</module>
+                    <frontName>groupdocssignature</frontName>
+                </args>
+            </groupdocssignature>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        
+        <menu>
+            <catalog>
+                <children>
+                    <groupdocssignature_adminform translate="title" module="groupdocssignature">
+                        <title>Groupdocs Viewer</title>
+                        <action>groupdocssignature/adminhtml_viewer</action>
+                    </groupdocssignature_adminform>
+                </children>
+            </catalog>
+        </menu>
+        
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <catalog>
+                            <children>
+                                <groupdocssignature_adminform>
+                                    <title>Groupdocs Signature</title>
+                                </groupdocssignature_adminform>
+                            </children>
+                        </catalog>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        
+        <layout>
+            <updates>
+                <groupdocssignature>
+                    <file>groupdocssignature.xml</file>
+                </groupdocssignature>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

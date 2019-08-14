@@ -1,0 +1,27 @@
+    <?php
+     // draft - http://www.magentocommerce.com/wiki/5_-_modules_and_development/0_-_module_development_in_magento/custom_module_with_custom_database_table
+    $installer = $this;
+     
+    $installer->startSetup();
+     
+    $installer->run("
+     
+    -- DROP TABLE IF EXISTS {groupdocssig};
+    CREATE TABLE IF NOT EXISTS `groupdocsass` (
+      `id` int(11) NOT NULL AUTO_INCREMENT,
+      `date_entered` datetime DEFAULT NULL,
+      `date_modified` datetime DEFAULT NULL,
+      `modified_user_id` char(36) DEFAULT NULL,
+      `created_by` char(36) DEFAULT NULL,
+      `description` text,
+      `active` tinyint(1) DEFAULT '1',
+      `client_id` varchar(255) DEFAULT NULL,
+      `api_key` varchar(255) DEFAULT NULL,
+      `iframe` varchar(255) DEFAULT NULL,
+      `file_id` varchar(255) DEFAULT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+     
+        ");
+     
+    $installer->endSetup();

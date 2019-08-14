@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Gdsig_Groupdocssignature>
-            <version>0.1.0</version>
+            <version>0.2.0</version>
         </Gdsig_Groupdocssignature>
     </modules>
     
@@ -23,7 +23,7 @@
                 <resourceModel>groupdocssignature_mysql4</resourceModel>
             </groupdocssignature>
             <groupdocssignature_mysql4>
-                <class>Gdass_Groupdocsassembly_Model_Mysql4</class>
+                <class>Gdsig_Groupdocssignature_Model_Mysql4</class>
                 <entities>
                     <groupdocssignature>
                         <table>groupdocssig</table>
@@ -85,7 +85,7 @@
             <catalog>
                 <children>
                     <groupdocssignature_adminform translate="title" module="groupdocssignature">
-                        <title>Groupdocs Viewer</title>
+                        <title>Groupdocs Signature</title>
                         <action>groupdocssignature/adminhtml_viewer</action>
                     </groupdocssignature_adminform>
                 </children>

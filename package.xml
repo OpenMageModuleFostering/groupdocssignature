@@ -1,24 +1,26 @@
 <?xml version="1.0"?>
 <package>
     <name>GroupDocsSignature</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
-    <license uri="http://www.opensource.org/licenses/gpl-license.php">GPL</license>
+    <license>GPL</license>
     <channel>community</channel>
     <extends/>
     <summary>Save time by collecting signatures online, directly from your webpages.</summary>
-    <description>GroupDocs Signature is an efficient digital signature service that is completely web-based. With it, you can collect signatures online by embedding documents into web pages as digital forms. Once a form is embedded, signers apply an electronic signature.&#xD;
+    <description>GroupDocs Signature is a web-based service that allows you to collect signatures online by embedding documents into web pages as digital forms. Once a document is embedded, it can be signed directly from a web-browser. This way you can collect signatures without the administrative overhead of printing, envelope stuffing and posting.&#xD;
 &#xD;
-GroupDocs' easy-to-use electronic signature service lets you collect digital signatures without the administrative overhead of printing, envelope stuffing and posting. It saves time and effort. First, simply add fields and prepare your documents for signing. You can prepare any number of signature forms with fields for signature, date, initials, etc. using the Signature app at GroupDocs.com.Then share the forms with the people who needs to sign them. The signers sign the documents online in a browser. As soon as the document is signed, you are notified.&#xD;
+Here is how it works:&#xD;
 &#xD;
-After installing the extension, embed forms to your web pages. To embed signature forms you only need the form's ID. Your customers can now sign documents online directly on your website.&#xD;
+After installing the GroupDocs online signature extension, simply upload a document that you want to get signed. A wide range of office formats are supported: .pdf, .doc, .docx, .odt, .ppt, etc.&#xD;
 &#xD;
-GroupDocs Signature gives you a greener, paperless office.</description>
-    <notes>Inital version with basics functions</notes>
+Then add form fields (such as date, initials and signature) to the document and embed it to your web page. This can be done automatically - you only need to enter the documents&#x2019; ID.&#xD;
+&#xD;
+Your customer/partner can now sign the document directly on your website. The document can be signed through a web-browser, without the need to download it. As soon as the document is signed, you are notified.</description>
+    <notes>Updated iframe and referer</notes>
     <authors><author><name>GroupDocs</name><user>Marketplace</user><email>marketplace@groupdocs.com</email></author></authors>
-    <date>2013-02-18</date>
-    <time>12:37:16</time>
-    <contents><target name="magelocal"><dir><dir name="Gdsig"><dir name="Groupdocssignature"><dir name="Block"><dir name="Adminhtml"><dir name="Cms"><dir name="Page"><file name="Edit.php" hash="3047750a0629d0a0431e01de7976e7a9"/></dir></dir><file name="Groupdocssignature.php" hash="30358212a727e665868361eab27b6f35"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="SignatureController.php" hash="7cb041f53477dd7b88f9e03963135d9a"/></dir></dir><dir name="etc"><file name="config.xml" hash="fcbf91b6b9ccf67c227eb22885158179"/></dir><dir name="Helper"><file name="Data.php" hash="8d7f119893c87511ec4bd6139bd943ed"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Groupdocssignature"><file name="Collection.php" hash="28444492a1caf3213261fc8503cbff3b"/></dir><file name="groupdocssignature.php" hash="d8ca5823683723457d4b6829c8ce3e22"/></dir></dir><dir name="sql"><dir name="Groupdocssignature_setup"><file name="mysql4-install-0.1.0" hash="0a0e529d575920f87c551b611f47e92f"/></dir></dir></dir></dir></dir><dir name="Gdsig"><dir name="Groupdocssignature"><dir name="Model"><dir name="Mysql4"><file name="groupdocssignature.php" hash="d8ca5823683723457d4b6829c8ce3e22"/></dir><file name="groupdocssignature.php" hash="8afc8007895451819d39b6eb2f5815b6"/></dir></dir></dir></target><target name="mageetc"><dir><dir name="modules"><file name="Gdsig_Groupdocssignature.xml" hash="cafd7ba19f5854a235cf3f78bafba886"/></dir></dir></target></contents>
+    <date>2013-05-20</date>
+    <time>12:16:16</time>
+    <contents><target name="mageetc"><dir><dir name="modules"><file name="Gdsig_Groupdocssignature.xml" hash="cafd7ba19f5854a235cf3f78bafba886"/></dir></dir></target><target name="magelocal"><dir><dir name="Gdsig"><dir name="Groupdocssignature"><dir name="Block"><dir name="Adminhtml"><dir name="Cms"><dir name="Page"><file name="Edit.php" hash="eda386b15972be888126e41115792026"/></dir></dir><file name="Groupdocssignature.php" hash="30358212a727e665868361eab27b6f35"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="SignatureController.php" hash="7cb041f53477dd7b88f9e03963135d9a"/></dir></dir><dir name="etc"><file name="config.xml" hash="fd7731d8d0797f39e152e30900797664"/></dir><dir name="Helper"><file name="Data.php" hash="8d7f119893c87511ec4bd6139bd943ed"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Groupdocssignature"><file name="Collection.php" hash="28444492a1caf3213261fc8503cbff3b"/></dir><file name="groupdocssignature.php" hash="d8ca5823683723457d4b6829c8ce3e22"/><file name="groupdocssignature.php" hash="d8ca5823683723457d4b6829c8ce3e22"/></dir><file name="groupdocssignature.php" hash="8afc8007895451819d39b6eb2f5815b6"/></dir><dir name="sql"><dir name="Groupdocssignature_setup"><file name="mysql4-install-0.1.0" hash="cdd3b3211f384c7af900b1a584ca6da1"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.3.0</min><max>5.4.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.3.0</min><max>5.4.15</max></php></required></dependencies>
 </package>
